@@ -1,0 +1,33 @@
+
+@import "tailwindcss";
+/* Global styles for dark mode */
+:root {
+  --bg-color: #121212;
+  --primary-color: #1db954;
+  --card-bg-color: #181818;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: white;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+/* Tailwind Customizations */
+@layer base {
+  .card {
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+}
